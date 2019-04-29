@@ -7,7 +7,7 @@ task UncompressGZ {
   File inputGZ
   String docker
   command {
-  gunzip ${inputGZ}
+  gunzip ${inputGZ} > ${sampleName}.fastq
   }
   output {
     File outputGZ = "${sampleName}.fastq"
