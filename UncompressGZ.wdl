@@ -10,7 +10,7 @@ task UncompressGZ {
   gunzip ${inputGZ}
   }
   output {
-    File outputGZ = "${sampleName}.wig"
+    File outputGZ = "${sampleName}.fastq"
   }
   runtime {
 		docker: docker
